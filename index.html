@@ -1,75 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class Timetable</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    body {
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #fff;
-    }
-    .timetable {
-      width: 100%;
-      overflow-x: auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: auto;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    th, td {
-      border: 1px solid #444;
-      padding: 10px;
-      text-align: center;
-      min-width: 120px;
-    }
-    th {
-      background-color: #222;
-      color: #fff;
-    }
-    td {
-      background-color: #1a1a1a;
-    }
-    td.break {
-      background-color: #333;
-      color: #f39c12;
-      font-weight: bold;
-    }
-    td.free {
-      background-color: #2c2c2c;
-      color: #2ecc71;
-      font-style: italic;
-    }
-    @media screen and (max-width: 768px) {
-      th, td {
-        font-size: 0.7rem;
-        padding: 6px;
-      }
-    }
-  </style>
+  <title>Responsive Timetable</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Weekly Timetable </h1>
+  <h1>Weekly Timetable</h1>
+  <button id="theme-toggle" aria-label="Toggle Dark Mode">
+    🌞
+  </button>
   <div class="timetable">
     <table>
       <thead>
         <tr>
-          <th>Time/Day</th>
+          <th>Time</th>
           <th>Monday</th>
           <th>Tuesday</th>
           <th>Wednesday</th>
@@ -82,40 +31,40 @@
       <tbody>
         <tr>
           <th>09:00 - 09:50</th>
-          <td>CA312 / Group 1 / tempCATSS4</td>
+          <td class="event">CA312 / Group 1 / tempCATSS4</td>
           <td class="free">Free</td>
           <td class="free">Free</td>
-          <td>CA325 / Dr. Farooq Ahmad</td>
+          <td class="event">CA325 / Dr. Farooq Ahmad</td>
           <td class="free">Free</td>
-          <td>CA301 / Mohammad Shafeeq</td>
-          <td rowspan="9" class="free">No Classes</td>
+          <td class="event">CA301 / Mohammad Shafeeq</td>
+          <td class="free" rowspan="9">No Classes</td>
         </tr>
         <tr>
           <th>09:50 - 10:40</th>
-          <td>CA312 / Group 1 / Mohammad Shafeeq</td>
-          <td>CA324 / Dr. Ausaf Ahmad</td>
-          <td>CA324 / Dr. Ausaf Ahmad</td>
-          <td>CA326 / Fiza Afreen</td>
-          <td>CA329 / Group 2 / Dr. Farooq Ahmad</td>
-          <td>CA326 / Fiza Afreen</td>
+          <td class="event">CA312 / Group 1 / Mohammad Shafeeq</td>
+          <td class="event">CA324 / Dr. Ausaf Ahmad</td>
+          <td class="event">CA324 / Dr. Ausaf Ahmad</td>
+          <td class="event">CA326 / Fiza Afreen</td>
+          <td class="event">CA329 / Group 2 / Dr. Farooq Ahmad</td>
+          <td class="event">CA326 / Fiza Afreen</td>
         </tr>
         <tr>
           <th>10:40 - 11:30</th>
-          <td>CA330 / Group 2 / Fiza Afreen</td>
-          <td>CA312 / Group 2 / Kaifi Qazi</td>
-          <td>CA326 / Fiza Afreen</td>
-          <td>CA324 / Dr. Ausaf Ahmad</td>
-          <td>CA329 / Group 2 / Maqsood Ahmad</td>
+          <td class="event">CA330 / Group 2 / Fiza Afreen</td>
+          <td class="event">CA312 / Group 2 / Kaifi Qazi</td>
+          <td class="event">CA326 / Fiza Afreen</td>
+          <td class="event">CA324 / Dr. Ausaf Ahmad</td>
+          <td class="event">CA329 / Group 2 / Maqsood Ahmad</td>
           <td class="free">Free</td>
         </tr>
         <tr>
           <th>11:30 - 12:20</th>
-          <td>CA330 / Group 2 / Alimullah Khan</td>
-          <td>CA312 / Group 2 / Mohammad Shafeeq</td>
+          <td class="event">CA330 / Group 2 / Alimullah Khan</td>
+          <td class="event">CA312 / Group 2 / Mohammad Shafeeq</td>
           <td class="free">Free</td>
           <td class="free">Free</td>
-          <td>CA330 / Group 1 / Alimullah Khan</td>
-          <td>CA307 / Group 1 / Dr. Suhaib Kidwai</td>
+          <td class="event">CA330 / Group 1 / Alimullah Khan</td>
+          <td class="event">CA307 / Group 1 / Dr. Suhaib Kidwai</td>
         </tr>
         <tr>
           <th>12:20 - 12:40</th>
@@ -128,29 +77,29 @@
         </tr>
         <tr>
           <th>12:40 - 01:30</th>
-          <td>CA325 / Dr. Farooq Ahmad</td>
-          <td>CA325 / Dr. Farooq Ahmad</td>
-          <td>CA325 / Dr. Farooq Ahmad</td>
-          <td>CA307 / Dr. Suhaib Kidwai</td>
-          <td>CA330 / Group 1 / Fiza Afreen</td>
-          <td>CA327 / Dr. Virendra Singh</td>
+          <td class="event">CA325 / Dr. Farooq Ahmad</td>
+          <td class="event">CA325 / Dr. Farooq Ahmad</td>
+          <td class="event">CA325 / Dr. Farooq Ahmad</td>
+          <td class="event">CA307 / Dr. Suhaib Kidwai</td>
+          <td class="event">CA330 / Group 1 / Fiza Afreen</td>
+          <td class="event">CA327 / Dr. Virendra Singh</td>
         </tr>
         <tr>
           <th>01:30 - 02:20</th>
           <td class="free">Free</td>
           <td class="free">Free</td>
           <td class="free">Free</td>
-          <td>CA327 / Group 2 / Dr. Virendra Singh</td>
-          <td>CA307 / Group 1 / Dr. Suhaib Kidwai</td>
-          <td>CA328 / Group 3 / tempCA6</td>
+          <td class="event">CA327 / Group 2 / Dr. Virendra Singh</td>
+          <td class="event">CA307 / Group 1 / Dr. Suhaib Kidwai</td>
+          <td class="event">CA328 / Group 3 / tempCA6</td>
         </tr>
         <tr>
           <th>02:20 - 03:10</th>
-          <td>CG301 / Shaz Alam</td>
-          <td>CG301 / Shaz Alam</td>
-          <td>CA327 / Group 2 / Dr. Virendra Singh</td>
-          <td>CA328 / Group 3 / tempCA6</td>
-          <td>CA327 / Group 2 / Dr. Virendra Singh</td>
+          <td class="event">CG301 / Shaz Alam</td>
+          <td class="event">CG301 / Shaz Alam</td>
+          <td class="event">CA327 / Group 2 / Dr. Virendra Singh</td>
+          <td class="event">CA328 / Group 3 / tempCA6</td>
+          <td class="event">CA327 / Group 2 / Dr. Virendra Singh</td>
           <td class="free">Free</td>
         </tr>
         <tr>
@@ -165,5 +114,7 @@
       </tbody>
     </table>
   </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
