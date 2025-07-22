@@ -1,120 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Timetable</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Timetable</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
-
 <body>
-  <h1>Weekly Timetable</h1>
-  <button id="theme-toggle" aria-label="Toggle Dark Mode">
-    🌞
-  </button>
+  <button id="theme-toggle">🌞</button>
+  <h1>Your Timetable</h1>
   <div class="timetable">
-    <table>
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-          <th>Sunday</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>09:00 - 09:50</th>
-          <td class="event">CA312 / Group 1 / tempCATSS4</td>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="event">CA325 / Dr. Farooq Ahmad</td>
-          <td class="free">Free</td>
-          <td class="event">CA301 / Mohammad Shafeeq</td>
-          <td class="free" rowspan="9">No Classes</td>
-        </tr>
-        <tr>
-          <th>09:50 - 10:40</th>
-          <td class="event">CA312 / Group 1 / Mohammad Shafeeq</td>
-          <td class="event">CA324 / Dr. Ausaf Ahmad</td>
-          <td class="event">CA324 / Dr. Ausaf Ahmad</td>
-          <td class="event">CA326 / Fiza Afreen</td>
-          <td class="event">CA329 / Group 2 / Dr. Farooq Ahmad</td>
-          <td class="event">CA326 / Fiza Afreen</td>
-        </tr>
-        <tr>
-          <th>10:40 - 11:30</th>
-          <td class="event">CA330 / Group 2 / Fiza Afreen</td>
-          <td class="event">CA312 / Group 2 / Kaifi Qazi</td>
-          <td class="event">CA326 / Fiza Afreen</td>
-          <td class="event">CA324 / Dr. Ausaf Ahmad</td>
-          <td class="event">CA329 / Group 2 / Maqsood Ahmad</td>
-          <td class="free">Free</td>
-        </tr>
-        <tr>
-          <th>11:30 - 12:20</th>
-          <td class="event">CA330 / Group 2 / Alimullah Khan</td>
-          <td class="event">CA312 / Group 2 / Mohammad Shafeeq</td>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="event">CA330 / Group 1 / Alimullah Khan</td>
-          <td class="event">CA307 / Group 1 / Dr. Suhaib Kidwai</td>
-        </tr>
-        <tr>
-          <th>12:20 - 12:40</th>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-        </tr>
-        <tr>
-          <th>12:40 - 01:30</th>
-          <td class="event">CA325 / Dr. Farooq Ahmad</td>
-          <td class="event">CA325 / Dr. Farooq Ahmad</td>
-          <td class="event">CA325 / Dr. Farooq Ahmad</td>
-          <td class="event">CA307 / Dr. Suhaib Kidwai</td>
-          <td class="event">CA330 / Group 1 / Fiza Afreen</td>
-          <td class="event">CA327 / Dr. Virendra Singh</td>
-        </tr>
-        <tr>
-          <th>01:30 - 02:20</th>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="free">Free</td>
-          <td class="event">CA327 / Group 2 / Dr. Virendra Singh</td>
-          <td class="event">CA307 / Group 1 / Dr. Suhaib Kidwai</td>
-          <td class="event">CA328 / Group 3 / tempCA6</td>
-        </tr>
-        <tr>
-          <th>02:20 - 03:10</th>
-          <td class="event">CG301 / Shaz Alam</td>
-          <td class="event">CG301 / Shaz Alam</td>
-          <td class="event">CA327 / Group 2 / Dr. Virendra Singh</td>
-          <td class="event">CA328 / Group 3 / tempCA6</td>
-          <td class="event">CA327 / Group 2 / Dr. Virendra Singh</td>
-          <td class="free">Free</td>
-        </tr>
-        <tr>
-          <th>03:10 - 04:00</th>
-          <td class="break">Break</td>
-          <td class="break">Break</td>
-          <td class="break">Break</td>
-          <td class="break">Break</td>
-          <td class="break">Break</td>
-          <td class="break">Break</td>
-        </tr>
-      </tbody>
-    </table>
+            <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>09:00 - 09:50</th>
+        <td class="event">CA312 / BCA-A (Group 1) / tempCATSS4 (No New Number Assigned)
+CA312 / BCA-A (Group 1) / Mohammad Shafeeq (No New Number Assigned)
+CA330 / BCA-A (Group 2) / Fiza Afreen (Cse Lab 14)
+CA330 / BCA-A (Group 2) / Alimullah Khan (Cse Lab 14)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+        <td class="event">CA325 / BCA-A / Dr. Farooq Ahmad (E423-A)</td>
+        <td class="break">Break</td>
+        <td class="event">CA301 / BCA-A / Mohammad Shafeeq (E103A)</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <th>09:50 - 10:40</th>
+        <td class="event">CA312 / BCA-A (Group 1) / tempCATSS4 (No New Number Assigned)
+CA312 / BCA-A (Group 1) / Mohammad Shafeeq (No New Number Assigned)
+CA330 / BCA-A (Group 2) / Fiza Afreen (Cse Lab 14)
+CA330 / BCA-A (Group 2) / Alimullah Khan (Cse Lab 14)</td>
+        <td class="event">CA324 / BCA-A / Dr. Ausaf Ahmad (E111)</td>
+        <td class="break">Break</td>
+        <td class="event">CA326 / BCA-A / Fiza Afreen (E423-A)</td>
+        <td class="break">Break</td>
+        <td class="event">CA326 / BCA-A / Fiza Afreen (E414)</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <th>10:40 - 11:30</th>
+        <td class="event">CA325 / BCA-A / Dr. Farooq Ahmad (E210)</td>
+        <td class="event">CA312 / BCA-A (Group 2) / Kaifi Qazi (B126)
+CA312 / BCA-A (Group 2) / Mohammad Shafeeq (B126)
+CA329 / BCA-A (Group 1) / Dr. Farooq Ahmad (B127(B))
+CA329 / BCA-A (Group 1) / Maqsood Ahmad (B127(B))</td>
+        <td class="event">CA324 / BCA-A / Dr. Ausaf Ahmad (E103A)</td>
+        <td class="event">CA324 / BCA-A / Dr. Ausaf Ahmad (E423-A)</td>
+        <td class="event">CA329 / BCA-A (Group 2) / Dr. Farooq Ahmad (No New Number Assigned)
+CA329 / BCA-A (Group 2) / Maqsood Ahmad (No New Number Assigned)
+CA330 / BCA-A (Group 1) / Alimullah Khan (Cse Lab 15)
+CA330 / BCA-A (Group 1) / Fiza Afreen (Cse Lab 15)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <th>11:30 - 12:20</th>
+        <td class="break">Break</td>
+        <td class="event">CA312 / BCA-A (Group 2) / Kaifi Qazi (B126)
+CA312 / BCA-A (Group 2) / Mohammad Shafeeq (B126)
+CA329 / BCA-A (Group 1) / Dr. Farooq Ahmad (B127(B))
+CA329 / BCA-A (Group 1) / Maqsood Ahmad (B127(B))</td>
+        <td class="event">CA326 / BCA-A / Fiza Afreen (E103A)</td>
+        <td class="break">Break</td>
+        <td class="event">CA329 / BCA-A (Group 2) / Dr. Farooq Ahmad (No New Number Assigned)
+CA329 / BCA-A (Group 2) / Maqsood Ahmad (No New Number Assigned)
+CA330 / BCA-A (Group 1) / Alimullah Khan (Cse Lab 15)
+CA330 / BCA-A (Group 1) / Fiza Afreen (Cse Lab 15)</td>
+        <td class="event">CA307 / BCA-A (Group 1) / Dr. Mohd. Suhaib Kidwai (E411)
+CA327 / BCA-A / Dr. Virendra Singh (E405)
+CA328 / BCA-A (Group 3) / tempCA6 (E409)</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <th>12:20 - 12:40</th>
+        <td class="event">CG301 / BCA-A / Shaz Alam (E419)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+        <td class="event">CA307 / BCA-A / Dr. Mohd. Suhaib Kidwai (E409)
+CA327 / BCA-A (Group 2) / Dr. Virendra Singh (B009)
+CA328 / BCA-A (Group 3) / tempCA6 (E207)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <th>01:30 - 02:20</th>
+        <td class="break">Break</td>
+        <td class="event">CA325 / BCA-A / Dr. Farooq Ahmad (E405)</td>
+        <td class="event">CA325 / BCA-A / Dr. Farooq Ahmad (E414)</td>
+        <td class="break">Break</td>
+        <td class="event">CA307 / BCA-A (Group 1) / Dr. Mohd. Suhaib Kidwai (E207)
+CA327 / BCA-A (Group 2) / Dr. Virendra Singh (E211)
+CA328 / BCA-A (Group 3) / tempCA6 (E111)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <th>02:20 - 03:10</th>
+        <td class="event">CA301 / BCA-A / Mohammad Shafeeq (B211)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+        <td class="event">CA301 / BCA-A / Mohammad Shafeeq (E408)</td>
+        <td class="event">CA326 / BCA-A / Fiza Afreen (E208)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <th>03:10 - 04:00</th>
+        <td class="event">CA324 / BCA-A / Dr. Ausaf Ahmad (B009)</td>
+        <td class="event">CG301 / BCA-A / Shaz Alam (E419)</td>
+        <td class="event">CA327 / BCA-A (Group 2) / Dr. Virendra Singh (B011)
+CA328 / BCA-A (Group 3) / tempCA6 (E403)</td>
+        <td class="break">Break</td>
+        <td class="event">CA301 / BCA-A / Mohammad Shafeeq (E208)</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+      </tr>
+    </tbody>
+  </table>
   </div>
-  <script src="script.js"></script>
+  <script href="script.js"></script>
 </body>
-
 </html>
